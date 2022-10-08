@@ -6,8 +6,8 @@
 //
 
 import Foundation
-import Firebase
-var DBref = Database.database(url: "https://photeplay-default-rtdb.europe-west1.firebasedatabase.app/").reference()
+//import Firebase
+// var DBref = Database.database(url: "https://photeplay-default-rtdb.europe-west1.firebasedatabase.app/").reference()
 
 enum FcollectionRefrence : String {
     case User

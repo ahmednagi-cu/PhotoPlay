@@ -3,18 +3,16 @@
 //  PhotoPlay
 //
 //  Created by ahmed nagi on 06/10/2022.
-//
+// 
 
 import UIKit
-import Firebase
+//import Firebase
 class RegisterViewController: UIViewController {
 // MARK: - properties
 
     @IBOutlet weak var userImg: UIImageView!{
         didSet {
             userImg.layer.cornerRadius = userImg.frame.height / 2
-            userImg.layer.borderWidth = 1
-            userImg.layer.borderColor = UIColor.yellow.cgColor
         }
     }
     
@@ -73,27 +71,28 @@ class RegisterViewController: UIViewController {
                !lastName.isEmpty,
                !email.isEmpty,
                !password.isEmpty,
-               !confirmpassword.isEmpty
-              
-        else { return }
+               !confirmpassword.isEmpty else { return }
+        if passwordTxtField.text! == confirmPasswordTxtField.text {
+          //  register(email: email, password: password)
+        }
     }
     
 // MARK: - Helper Functions
     
  
     /// Register func
-    private func register(email: String, password: String){
-        Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
-            guard let result = result else { return }
-            if error != nil {
-                print(error!.localizedDescription)
-                return
-            }
-            
-            print(result.user.uid)
-            print("DEBUG : register is Success...")
-        }
-    }
+//    private func register(email: String, password: String){
+//        Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+//            guard let result = result else { return }
+//            if error != nil {
+//                print(error!.localizedDescription)
+//                return
+//            }
+//            
+//            print(result.user.uid)
+//            print("DEBUG : register is Success...")
+//        }
+//    }
    
     
     

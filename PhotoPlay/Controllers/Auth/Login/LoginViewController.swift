@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Firebase
+//import Firebase
 class LoginViewController: UIViewController {
 // MARK: - Properties
     
@@ -40,13 +40,13 @@ class LoginViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func loginBtnAction(_ sender: UIButton) {
-       // goToApp()
-        guard let email = emailTxtField.text,
-              let password = passwordTxtField.text,
-              !email.isEmpty,
-              !password.isEmpty
-        else { return }
-         login(email: email, password: password)
+        goToApp()
+//        guard let email = emailTxtField.text,
+//              let password = passwordTxtField.text,
+//              !email.isEmpty,
+//              !password.isEmpty
+//        else { return }
+        // login(email: email, password: password)
       
     }
     
@@ -77,17 +77,17 @@ class LoginViewController: UIViewController {
     
     // dataBase
        /// Login func
-       private func login(email: String, password: String){
-           Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
-               guard let result = result else { return }
-               if error != nil {
-                   print(error!.localizedDescription)
-                   return
-               }
-               print(result.user.uid)
-               print("DEBUG : register is Success...")
-           }
-       }
-   
+//       private func login(email: String, password: String){
+//           Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+//               guard let result = result else { return }
+//               if error != nil {
+//                   print(error!.localizedDescription)
+//                   return
+//               }
+//               print(result.user.uid)
+//               print("DEBUG : register is Success...")
+//           }
+//       }
+//   
 
 }

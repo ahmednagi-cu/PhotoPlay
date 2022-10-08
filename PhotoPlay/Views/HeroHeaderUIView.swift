@@ -28,8 +28,7 @@ class HeroHeaderUIView: UIView {
         super.init(frame: frame)
         addSubview(heroImage)
         addGradient()
-       addSubview(label)
-        applayConstrains()
+       
     }
     
     override func layoutSubviews() {
@@ -53,14 +52,7 @@ class HeroHeaderUIView: UIView {
         gradientlayer.frame = bounds
         layer.addSublayer(gradientlayer)
     }
-    private func applayConstrains() {
-        let labelConstraints = [
-            label.centerXAnchor.constraint(equalTo: centerXAnchor),
-            label.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -80)
-            
-        ]
-        NSLayoutConstraint.activate(labelConstraints)
-    }
+  
     
     public func configure(with model : TitleViewModel){
         guard let url = URL(string: "https://image.tmdb.org/t/p/w500/\(model.posterURL)") else {
