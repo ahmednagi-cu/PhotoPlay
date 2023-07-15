@@ -1,5 +1,5 @@
 # PhotoPlay
-![Simulator Screen Shot - iPhone 14 Pro - 2023-07-15 at 15 40 20](https://github.com/ahmednagi-cu/PhotoPlay/assets/78219319/c2d79fd4-9236-4ef8-84a7-5365ba97e42b)
+![Simulator Screen Shot - iPhone 14 Pro - 2023-07-15 at 15 40 20](https://github.com/ahmednagi-cu/PhotoPlay/assets/78219319/c2d79fd4-9236-4ef8-84a7-5365ba97e42b) =250x250
 ![Simulator Screen Shot - iPhone 14 Pro - 2023-07-15 at 15 41 16](https://github.com/ahmednagi-cu/PhotoPlay/assets/78219319/4babd10f-1dde-4e52-9965-4efe15b3f3fa)
 ![Simulator Screen Shot - iPhone 14 Pro - 2023-07-15 at 15 41 26](https://github.com/ahmednagi-cu/PhotoPlay/assets/78219319/385a2737-21c8-4b70-b0f2-d46ad172c524)
 ![Simulator Screen Shot - iPhone 14 Pro - 2023-07-15 at 15 41 30](https://github.com/ahmednagi-cu/PhotoPlay/assets/78219319/06288f19-e40e-453d-b444-5db6efb592fc)
